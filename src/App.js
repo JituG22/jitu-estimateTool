@@ -1,7 +1,6 @@
 
 import React from 'react';
 import './App.css';
-import Layout from './shared/layout/layout';
 import Login from './login/login';
 import {
   BrowserRouter

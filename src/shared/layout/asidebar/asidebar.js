@@ -9,9 +9,6 @@ import HomeIcon from '@material-ui/icons/Home';
 import AssignmentIndIcon from '@material-ui/icons/AssignmentInd';
 import FolderIcon from '@material-ui/icons/Folder';
 import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
     Link
   } from "react-router-dom";
 export default function Asidebar(props){

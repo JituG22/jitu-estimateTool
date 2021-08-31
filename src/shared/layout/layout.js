@@ -1,6 +1,5 @@
-import React, { Component, ReactDOM } from 'react'
+import React, { Component } from 'react'
 import Login from '../../login/login';
-import Home from '../../pages/home/home';
 import AllClient from '../../pages/all-client/all-client';
 import TopNan from './topnav/topnav';
 import Breadcrum from './breadcrum/breadcrum';

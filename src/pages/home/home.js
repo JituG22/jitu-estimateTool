@@ -1,14 +1,7 @@
 import React,{Component, Suspense, lazy}from 'react';
 import Table from '../../shared/ui-view/table/table';
 import HomeService from '../home/home.service';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  useParams,
-  useLocation,
-  useHistory
-} from "react-router-dom";
+
 const columns = [
     { field: 'id', headerName: 'ID', width: 90 },
     {
