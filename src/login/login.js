@@ -21,7 +21,7 @@ export default function Login() {
                 </Grid>
                
             </Grid>
-            <Grid container direction="column" xs={6}  justifyContent="center" alignItems="center" >
+            <Grid container direction="column"  justifyContent="center" alignItems="center" >
                           
                                 <h1 className="login-title"> Login</h1>
                                 <form onSubmit={handleLogin}>
