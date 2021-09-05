@@ -1,6 +1,5 @@
 import React from 'react'
 import { Drawer } from '@material-ui/core';
-import './asidebar.css';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
@@ -8,10 +7,11 @@ import ListItemText from '@material-ui/core/ListItemText';
 import HomeIcon from '@material-ui/icons/Home';
 import AssignmentIndIcon from '@material-ui/icons/AssignmentInd';
 import FolderIcon from '@material-ui/icons/Folder';
+import './sidebar.css';
 import {
     Link
   } from "react-router-dom";
-export default function Asidebar(props){
+export default function Sidebar(props){
     return (
         <div>
             <Drawer className="asidebar-wrp" anchor={props.anchor}
@@ -22,10 +22,7 @@ export default function Asidebar(props){
                             <ListItemIcon>
                                 <HomeIcon />
                             </ListItemIcon>
-                            <Link to={{
-                                 pathname: "/",
-                                 state:{pageName:'Home'}
-                            }}>Home</Link>
+                            <Link to={{ pathname:"/home", state:{pageName:'Home'}}}>Home</Link>
                         </ListItem>
                         <ListItem button>
                             <ListItemIcon>

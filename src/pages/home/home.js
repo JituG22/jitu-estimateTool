@@ -1,4 +1,4 @@
-import React,{Component, Suspense, lazy}from 'react';
+import React,{Component, Suspense}from 'react';
 import Table from '../../shared/ui-view/table/table';
 import HomeService from '../home/home.service';
 
@@ -59,8 +59,7 @@ export default class Home extends Component {
           <div>
            <Suspense fallback={<div> Logind .... </div>}>
               {
-
-                      this.state.isShow ?  (<div >  <Table columanData={this.state.columanHandel} rowData={this.state.rowDataHandel} /> </div>) : (<div>Loding...</div>)
+            this.state.isShow ? (<div >  <Table columanData={this.state.columanHandel} rowData={this.state.rowDataHandel} /> </div>) : (<div>Loding...</div>)
               }
           </Suspense>
           </div>

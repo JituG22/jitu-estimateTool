@@ -79,10 +79,10 @@ const HomeService = {
     getData:  function(){
         axios.get("https://jsonplaceholder.typicode.com/posts").then(function(res){
              // handle success
-            console.log("this get success responce", res)
+            // console.log("this get success responce", res)
         }).catch(function(error){
                 // handle error
-            console.log(error);
+            // console.log(error);
         })
 
         return rows;
